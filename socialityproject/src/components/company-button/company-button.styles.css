@@ -1,0 +1,7 @@
+.company-button {
+    padding: 5px;
+}
+
+.company-button:first-child {
+    padding-top: 10px;
+}

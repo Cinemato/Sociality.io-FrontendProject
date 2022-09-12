@@ -1,0 +1,12 @@
+.dropdown-button {
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dropdown-button-icon {
+    font-size: 12px;
+    margin-right: 23px;
+}
