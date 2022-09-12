@@ -1,0 +1,12 @@
+.navigation-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company-sub-bar, .profile-sub-bar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    height: 100vh;
+}
