@@ -1,7 +1,7 @@
 import './profile-button.styles.css';
-import { ReactComponent as PlusSign } from '../../assets/plus.svg';
-import { ReactComponent as MinusSign } from '../../assets/minus.svg';
-import { ReactComponent as Arrow } from '../../assets/arrow.svg';
+import { ReactComponent as PlusSign } from '../../assets/button-icons/plus.svg';
+import { ReactComponent as MinusSign } from '../../assets/button-icons/minus.svg';
+import { ReactComponent as Arrow } from '../../assets/button-icons/arrow.svg';
 import { useState } from 'react';
 
 import ButtonDropdownList from '../button-dropdown-list/button-dropdown-list.component';

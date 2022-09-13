@@ -4,6 +4,7 @@
     align-items: center;
     cursor: pointer;
     font-size: 15px;
+    background-color: #32363a;
 }
 
 .dropdown-button-icon {

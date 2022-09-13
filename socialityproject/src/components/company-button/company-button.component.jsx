@@ -1,11 +1,22 @@
 import './company-button.styles.css';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-const CompanyButton = ({ companyLogo }) => {
+const CompanyButton = ({ companyLogo, id}) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  // Selecting default company logo (for displaying purposes)
+  useEffect(() => {
+    id === 4 && setIsSelected(true)
+  }, [id])
+
+  const selectedToggle = () => {
+    setIsSelected(!isSelected);
+  }
+
   return (
-    <Link className='company-button' to='/'>
+    <div className={`company-button ${isSelected ? 'company-selected' : ''}`} onClick={selectedToggle}>
         <img src={companyLogo} alt="companylogo" />
-    </Link>
+    </div>
   )
 }
 

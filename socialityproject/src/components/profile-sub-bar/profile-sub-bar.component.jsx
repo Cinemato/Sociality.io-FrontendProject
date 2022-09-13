@@ -1,10 +1,10 @@
 import './profile-sub-bar.styles.css';
-import { ReactComponent as Notification } from '../../assets/notification.svg';
-import { ReactComponent as Summary } from '../../assets/summary.svg';
-import { ReactComponent as Publish } from '../../assets/publish.svg';
-import { ReactComponent as Engage } from '../../assets/engage.svg';
-import { ReactComponent as Listen } from '../../assets/listen.svg';
-import { ReactComponent as Report } from '../../assets/report.svg';
+import { ReactComponent as Notification } from '../../assets/button-icons/notification.svg';
+import { ReactComponent as Summary } from '../../assets/button-icons/summary.svg';
+import { ReactComponent as Publish } from '../../assets/button-icons/publish.svg';
+import { ReactComponent as Engage } from '../../assets/button-icons/engage.svg';
+import { ReactComponent as Listen } from '../../assets/button-icons/listen.svg';
+import { ReactComponent as Report } from '../../assets/button-icons/report.svg';
 import ProfileButton from '../profile-button/profile-button.component';
 
 const PROFILE_BUTTONS = {
