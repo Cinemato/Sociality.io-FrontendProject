@@ -1,0 +1,12 @@
+.status-container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #5f6062;
+}
+
+.status-color {
+    margin-right: 8px;
+    height: 45px;
+    font-size: 30px;
+}

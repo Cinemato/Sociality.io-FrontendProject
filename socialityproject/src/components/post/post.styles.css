@@ -1,0 +1,85 @@
+.post-container {
+    width: 370px;
+    border: 1px solid #d7dadf;
+    border-radius: 6px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+}
+
+.post-status {
+    width: 70px;
+    background-color: #3ac183;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.post-details {
+    padding: 20px;
+}
+
+.status-options svg {
+    margin-right: 12px;
+    fill: #c5c4c4;
+}
+
+.post-container svg {
+    width: 20px;
+}
+
+.post-container svg:last-child {
+    margin-right: 0px;
+}
+
+.post-status svg {
+    fill: white;
+}
+
+.post-upper-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post-date {
+    font-size: 13px;
+    color: #aaa7a7;
+}
+
+.status-options {
+    display: flex;
+    align-items: center;
+}
+
+.post-content p {
+    margin-bottom: 10px;
+    color: #959393;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.post-content img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border: 1px solid #d7dadf;
+}
+
+.post-lower-options {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.post-lower-options svg {
+    fill: #a8a7a7;
+    margin-right: 5px;
+}
+
+.post-lower-options span {
+    margin-right: 20px;
+    color: #585858;
+}

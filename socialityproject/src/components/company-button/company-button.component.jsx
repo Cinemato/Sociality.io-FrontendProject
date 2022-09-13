@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const CompanyButton = ({ companyLogo, id}) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  // Selecting default company logo (for displaying purposes)
+  // Selecting default company logo (for matching the design and desplaying purposes)
   useEffect(() => {
     id === 4 && setIsSelected(true)
   }, [id])

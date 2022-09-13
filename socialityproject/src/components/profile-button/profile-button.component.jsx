@@ -2,13 +2,18 @@ import './profile-button.styles.css';
 import { ReactComponent as PlusSign } from '../../assets/button-icons/plus.svg';
 import { ReactComponent as MinusSign } from '../../assets/button-icons/minus.svg';
 import { ReactComponent as Arrow } from '../../assets/button-icons/arrow.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import ButtonDropdownList from '../button-dropdown-list/button-dropdown-list.component';
 
 const ProfileButton = ({ ButtonIcon, buttonName}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const {text, dropdownButtons} = buttonName;
+
+  // Selecting default profile button (for matching the design and desplaying purposes)
+  useEffect(() => {
+    text === "PUBLISH" && setIsDropdownOpen(true);
+  }, [text])
 
   const dropdownToggle = () => {
     if(dropdownButtons)
