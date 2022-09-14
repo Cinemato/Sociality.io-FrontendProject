@@ -1,0 +1,13 @@
+.posts-date-container {
+    margin-top: 30px;
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts-date {
+    color: #959393;
+    font-weight: normal;
+}

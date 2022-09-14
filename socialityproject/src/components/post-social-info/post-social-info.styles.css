@@ -1,0 +1,15 @@
+.post-social-info {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.post-social-info svg {
+    fill: #a8a7a7;
+    margin-right: 5px;
+}
+
+.post-social-info span {
+    margin-right: 20px;
+    color: #717070;
+}

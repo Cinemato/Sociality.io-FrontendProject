@@ -1,0 +1,12 @@
+.post-status {
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.post-status svg {
+    fill: white;
+}

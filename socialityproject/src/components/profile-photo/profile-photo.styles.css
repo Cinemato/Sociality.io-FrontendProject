@@ -1,0 +1,11 @@
+.profile-photo-container {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+    background-position: center;
+    border: 1.5px solid #d7dadf;
+    border-radius: 50px;
+}

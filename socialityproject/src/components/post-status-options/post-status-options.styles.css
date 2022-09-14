@@ -1,0 +1,20 @@
+.post-status-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #aaa7a7;
+}
+
+.status-options {
+    display: flex;
+    align-items: center;
+}
+
+.status-options svg {
+    margin-right: 12px;
+    fill: #c5c4c4;
+}
