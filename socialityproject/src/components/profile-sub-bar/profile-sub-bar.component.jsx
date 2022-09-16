@@ -1,102 +1,14 @@
 import './profile-sub-bar.styles.css';
-import { ReactComponent as Notification } from '../../assets/button-icons/notification.svg';
-import { ReactComponent as Summary } from '../../assets/button-icons/summary.svg';
-import { ReactComponent as Publish } from '../../assets/button-icons/publish.svg';
-import { ReactComponent as Engage } from '../../assets/button-icons/engage.svg';
-import { ReactComponent as Listen } from '../../assets/button-icons/listen.svg';
-import { ReactComponent as Report } from '../../assets/button-icons/report.svg';
 import ProfileButton from '../profile-button/profile-button.component';
 
-const PROFILE_BUTTONS = {
-  notifications: {
-    text: "NOTIFICATIONS",
-  },
-  summary: {
-    text: "SUMMARY",
-    dropdownButtons: [
-      {
-        text: "Compose",
-        color: "#fff",
-        url: "/"
-      },
-      {
-        text: "Feed",
-        color: "#f55661",
-        url: "/"
-      }
-    ]
-  },
-  publish: {
-    text: "PUBLISH",
-    dropdownButtons: [
-      {
-        text: "Compose",
-        color: "#fff",
-        url: "/"
-      },
-      {
-        text: "Feed",
-        color: "#f55661",
-        url: "/"
-      }
-    ]
-  },
-  engage: {
-    text: "ENGAGE",
-    dropdownButtons: [
-      {
-        text: "Compose",
-        color: "#fff",
-        url: "/"
-      },
-      {
-        text: "Feed",
-        color: "#f55661",
-        url: "/"
-      }
-    ]
-  },
-  listen: {
-    text: "LISTEN",
-    dropdownButtons: [
-      {
-        text: "Compose",
-        color: "#fff",
-        url: "/"
-      },
-      {
-        text: "Feed",
-        color: "#f55661",
-        url: "/"
-      }
-    ]
-  },
-  report: {
-    text: "REPORT",
-    dropdownButtons: [
-      {
-        text: "Compose",
-        color: "#fff",
-        url: "/"
-      },
-      {
-        text: "Feed",
-        color: "#f55661",
-        url: "/"
-      }
-    ]
-  }
-}
+import PROFILE_BUTTONS_DATA from '../../data/profile-buttons-data';
 
 const ProfileSubBar = () => {
   return (
     <div className="profile-sub-bar">
-        <ProfileButton ButtonIcon={Notification} buttonName={PROFILE_BUTTONS.notifications} />
-        <ProfileButton ButtonIcon={Summary} buttonName={PROFILE_BUTTONS.summary} />
-        <ProfileButton ButtonIcon={Publish} buttonName={PROFILE_BUTTONS.publish} />
-        <ProfileButton ButtonIcon={Engage} buttonName={PROFILE_BUTTONS.engage} />
-        <ProfileButton ButtonIcon={Listen} buttonName={PROFILE_BUTTONS.listen} />
-        <ProfileButton ButtonIcon={Report} buttonName={PROFILE_BUTTONS.report} />
+      {PROFILE_BUTTONS_DATA.map(button => (
+        <ProfileButton key={button.text} button={button}/>
+      ))}
     </div>
   )
 }

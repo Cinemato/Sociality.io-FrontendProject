@@ -17,6 +17,6 @@
 
 @media screen and (max-width: 650px) {
     .status-container {
-        font-size: 13px;
+        margin-right: 15px;
     }
 }

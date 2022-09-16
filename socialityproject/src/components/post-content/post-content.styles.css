@@ -12,10 +12,9 @@
     border: 1px solid #d7dadf;
 }
 
-
 @media screen and (max-width: 860px) {
     .post-content img {
-        height: 400px;
+        height: 350px;
     }
 }
 

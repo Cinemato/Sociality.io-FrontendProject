@@ -11,11 +11,13 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1100px) {
     .profile-photo {
-        top: 80px;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 100px;
+        border: 0.5px solid #f55661;
     }
 }
 

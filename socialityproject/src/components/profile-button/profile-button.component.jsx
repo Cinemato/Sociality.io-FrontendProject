@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react';
 
 import ButtonDropdownList from '../button-dropdown-list/button-dropdown-list.component';
 
-const ProfileButton = ({ ButtonIcon, buttonName}) => {
+const ProfileButton = ({ button }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const {text, dropdownButtons} = buttonName;
+  const {text, dropdownButtons} = button;
 
   // Selecting default profile button (for matching the design and desplaying purposes)
   useEffect(() => {
@@ -24,7 +24,9 @@ const ProfileButton = ({ ButtonIcon, buttonName}) => {
     <>
       <div className={`profile-button ${isDropdownOpen ? 'profile-button-open' : ''}`} onClick={dropdownToggle}>
           <div className="sub-title">
-              <ButtonIcon className='button-icon'/>
+              <div className="button-icon">
+                {button.icon}
+              </div>
               <span>{text}</span>
           </div>
           {dropdownButtons ? 
