@@ -13,3 +13,34 @@
     margin-right: 20px;
     color: #717070;
 }
+
+@media screen and (max-width: 860px) {
+    .post-social-info {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .post-social-info svg { 
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .post-social-info {
+        font-size: 13px;
+    }
+
+    .post-social-info svg { 
+        width: 21px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .post-social-info {
+        font-size: 11px;
+    }
+
+    .post-social-info svg { 
+        width: 18px;
+    }
+}

@@ -2,3 +2,9 @@
     padding: 20px;
     width: 89%;
 }
+
+@media screen and (max-width: 860px) {
+    .post-details{
+        padding: 30px;
+    }
+}

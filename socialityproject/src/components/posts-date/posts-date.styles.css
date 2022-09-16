@@ -11,3 +11,22 @@
     color: #959393;
     font-weight: normal;
 }
+
+
+@media screen and (max-width: 860px) {
+    .posts-date-container {
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .posts-date {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .posts-date-container {
+        width: 90%;
+    }
+}

@@ -5,8 +5,18 @@
     color: #5f6062;
 }
 
+.status-container:last-child {
+    margin-right: 0px;
+}
+
 .status-color {
     margin-right: 8px;
     height: 45px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .status-container {
+        font-size: 13px;
+    }
 }

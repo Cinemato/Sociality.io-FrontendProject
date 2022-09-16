@@ -12,7 +12,6 @@
     width: 18px;
     margin-right: 15px;
     fill: #f55661;
-    
 }
 
 .sub-title{
@@ -56,4 +55,19 @@
     width: 20px;
     bottom: -6.5px;
     left: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-button {
+        font-size: 13px;
+    }
+
+    .notification-count {
+        font-size: 12px;
+    }
+
+    .profile-button .button-icon{
+        width: 15px;
+        margin-right: 10px;
+    }
 }

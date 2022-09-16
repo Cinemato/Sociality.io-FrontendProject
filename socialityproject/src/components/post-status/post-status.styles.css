@@ -10,3 +10,21 @@
 .post-status svg {
     fill: white;
 }
+
+@media screen and (max-width: 860px) {
+    .post-status svg {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .post-status svg {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .post-status svg {
+        width: 22px;
+    }
+}

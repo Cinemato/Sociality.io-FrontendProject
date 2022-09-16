@@ -11,3 +11,16 @@
     margin-bottom: 10px;
     border: 1px solid #d7dadf;
 }
+
+
+@media screen and (max-width: 860px) {
+    .post-content img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .post-content img {
+        height: max-content;
+    }
+}
