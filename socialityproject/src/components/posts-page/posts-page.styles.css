@@ -1,6 +1,7 @@
 .posts-page {
     margin-bottom: 100px;
     margin-left: 350px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
