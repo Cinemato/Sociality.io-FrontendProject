@@ -17,6 +17,7 @@
 .status-options svg {
     margin-right: 12px;
     fill: #c5c4c4;
+    stroke: #c5c4c4;
     cursor: pointer;
 }
 
