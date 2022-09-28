@@ -1,20 +1,16 @@
 import './company-button.styles.css';
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { PostsContext } from '../../contexts/posts.context';
 
 const CompanyButton = ({ button }) => {
-  const [isSelected, setIsSelected] = useState(false);
-
-  // Selecting default company logo (for matching the design and desplaying purposes)
-  useEffect(() => {
-    button.id === 3 && setIsSelected(true)
-  }, [button.id])
+  const {currentBrand, setCurrentBrand} = useContext(PostsContext);
 
   const selectedToggle = () => {
-    setIsSelected(!isSelected);
+    setCurrentBrand(button.id);
   }
 
   return (
-    <div className={`company-button ${isSelected ? 'company-selected' : ''}`} onClick={selectedToggle}>
+    <div className={`company-button ${currentBrand === button.id ? 'company-selected' : ''}`} onClick={selectedToggle}>
         <img src={button.logo} alt="companylogo" />
     </div>
   )
