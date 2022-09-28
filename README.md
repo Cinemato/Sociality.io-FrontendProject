@@ -9,4 +9,4 @@ How to start project:
 2. Run this command in the terminal: ```npm start```.
 
 Bonus:
-I have made the design responsive in screen kinds (mobile, tablet, pc).
+I have made the design responsive in all screen kinds (mobile, tablet, pc).
