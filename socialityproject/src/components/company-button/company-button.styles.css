@@ -60,3 +60,10 @@
         left: -13px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .company-selected::before {
+        left: -11px;
+    }
+}
+
